@@ -1,0 +1,198 @@
+body {
+  width: 100%;
+  max-width: 1600px;
+  background-color: rgb(34, 15, 2);
+  color: antiquewhite;
+  background-image: url("./img/galgenveld_Bruegel_200.jpg");
+  background-repeat: no-repeat;
+  font-family: "Grenze Gotisch", cursive;
+}
+
+main {
+  width: 100%;
+  height: 800px;
+  position: relative;
+  color: antiquewhite;
+}
+
+.title_container {
+  /* border: 3px solid red; */
+  margin: 0px;
+}
+
+.play_title {
+  /* border: 3px solid red; */
+  text-align: center;
+  font-size: 3rem;
+  padding: 0px;
+  margin: 0px;
+}
+
+.play_subtitle {
+  font-family: "Commissioner", sans-serif;
+  text-align: center;
+  margin: 0px;
+}
+
+.ui_container {
+  /* border: 2px solid white; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0px;
+  padding: 0px;
+}
+
+.play_container {
+  /* display: flex; */
+  /* border: 2px solid blue; */
+  max-width: auto;
+  height: auto;
+  margin: 0 auto;
+}
+
+#button_container {
+  /* border: 3px solid pink; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 0px 10px;
+}
+
+.guess,
+.restart {
+  background-color: rgb(212, 191, 137);
+  color: rgb(77, 53, 21);
+  height: 50px;
+  width: 100px;
+  border: 1px solid rgb(77, 53, 21);
+  border-radius: 5px;
+}
+
+.guess:hover,
+.restart:hover {
+  background-color: rgb(196, 166, 89);
+  border: 2px solid rgb(77, 53, 21);
+  color: rgb(77, 53, 21);
+  /* box-shadow: 0px 2px 5px 0px rgb(165, 158, 129); */
+  transition: all 200ms ease-in-out;
+}
+
+#letter-input {
+  width: 93px;
+  height: 50px;
+  border: 1px solid rgb(77, 53, 21);
+  border-radius: 5px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.play_info {
+  /* border: 2px solid green; */
+  margin-top: 20px;
+  width: 500px;
+  height: auto;
+}
+
+.incorrect {
+  /* border: 3px solid red; */
+  font-size: 1.4rem;
+  font-weight: normal;
+  margin: 10px 30px;
+}
+
+.incorrectly_guessed_letters {
+  /* border: 3px solid blue; */
+  height: 50px;
+  font-size: 2rem;
+  padding: 0px;
+  margin: 0px 20px;
+  text-align: center;
+}
+
+.lives {
+  /* border: 3px solid yellow; */
+  font-size: 1.4rem;
+  margin: 10px 30px;
+}
+
+#center_container {
+  /* border: 4px solid red; */
+  margin: 0 auto;
+}
+
+.gallow_container {
+  position: relative;
+  border-radius: 5px;
+  width: auto;
+  height: auto;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.6;
+  transition: all 300ms ease-in;
+}
+
+#gallow_img {
+  width: 500px;
+  transition: all 300ms ease-in;
+}
+
+.current_word {
+  /* border: 2px solid red; */
+  font-family: "Commissioner", sans-serif;
+  color: black;
+  background-color: white;
+  margin: 5px auto;
+  padding: 0px 0px 10px 0px;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  opacity: 0.6;
+  transition: all 300ms ease-in;
+}
+
+.winlose {
+  /* border: 2px solid pink; */
+  margin: 0 auto;
+  width: auto;
+  height: auto;
+}
+
+#win,
+#lose {
+  /* border: 2px solid green; */
+  display: flex;
+  justify-content: center;
+  padding: 0px;
+  display: none;
+  color: antiquewhite;
+  text-align: center;
+  font-size: 2rem;
+}
+
+#win p,
+#lose p {
+  padding: 0px;
+  margin: 0px;
+}
+
+#win h2,
+#lose h2 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+#chosen-word {
+  font-size: 2.5rem;
+}
+
+#hallowed {
+  height: 30px;
+  width: 300px;
+  margin: 0 auto;
+  opacity: 0.4;
+}

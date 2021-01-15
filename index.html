@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Hallowed Be Thy Name</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="./style_desktop.css" />
+    <link rel="stylesheet" type="text/css" href="drawing.css" />
+    <link rel="stylesheet" type="text/css" href="drawing_desktop.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Commissioner&family=Grenze+Gotisch:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script defer type="text/javascript" src="./database.js"></script>
+    <script defer type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <main>
+      <section class="title_container">
+        <h1 class="play_title">Hallowed Be Thy Name</h1>
+        <p class="play_subtitle">
+          [no HTML will actually be harmed during this game]
+        </p>
+      </section>
+      <section class="ui_container">
+        <section class="play_container">
+          <section class="play_info">
+            <section id="button_container">
+              <button class="restart">Start</button>
+              <input
+                id="letter-input"
+                type="text"
+                placeholder="letter"
+                maxlength="1"
+              />
+              <button class="guess">Guess</button>
+            </section>
+
+            <h3 class="incorrect">Incorrectly guessed letters:</h3>
+            <div class="incorrectly_guessed_letters"></div>
+            <p id="guesses_remaining" class="lives"></p>
+          </section>
+        </section>
+        <section id="center_container">
+          <section id="gallow_container" class="gallow_container">
+            <img id="gallow_img" src="./img/1_hangman_gallow.jpeg" alt="" />
+            <!-- <img src="./img/DeadEmoji-removebg-preview.png" alt="dead_emoji" id="dead_emoji"> -->
+          </section>
+          <div class="current_word">_ _ _ _ _</div>
+        </section>
+
+        <section class="winlose">
+          <div id="win">
+            <h2>YOU WON!</h2>
+            <h2>your live will be spared</h2>
+            <h2>for now...</h2>
+            <!-- <img src="./img/bruce_oke.gif" alt="win"> -->
+          </div>
+
+          <div id="lose">
+            <h2>You lost...</h2>
+            <!-- <img src="./img/bruce_not_oke2.gif" alt="lose"> -->
+            <p id="chosen_word_was">The chosen metalband was:</p>
+            <p id="chosen-word"></p>
+          </div>
+        </section>
+      </section>
+    </main>
+    <section class="audio">
+      <audio
+        id="hallowed"
+        src="music/08 Hallowed Be Thy Name.m4a"
+        preload="auto"
+        controls
+      >
+        Hallowed Be Thy Name - Iron Maiden
+      </audio>
+      <audio
+        id="wrong_answer"
+        src="music/wrong_answer.mp3"
+        preload="auto"
+      ></audio>
+      <audio
+        id="right_answer"
+        src="music/rigth_answer.mp3"
+        preload="auto"
+      ></audio>
+      <audio src="music/applause.mp3" id="applause" preload="auto"></audio>
+      <audio src="music/death_bell.mp3" id="deathbell"></audio>
+    </section>
+  </body>
+</html>

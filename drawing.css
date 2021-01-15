@@ -1,0 +1,127 @@
+.body-short {
+  width: 7px;
+  height: 8px;
+  background-color: black;
+  border-radius: 100%;
+  position: absolute;
+  top: 83px;
+  right: 162px;
+  opacity: 0;
+}
+
+.body-long {
+  display: block;
+  width: 7px;
+  height: 60px;
+  background-color: black;
+  border-radius: 4px;
+  position: absolute;
+  top: 83px;
+  right: 162px;
+  opacity: 0.8;
+  transition: all 300ms ease-in;
+}
+
+.leg1-short {
+  width: 7px;
+  height: 8px;
+  background-color: black;
+  border-radius: 100%;
+  position: absolute;
+  top: 136px;
+  right: 162px;
+  transform: rotate3d(0, 0, 1, 40deg);
+  opacity: 0;
+}
+
+.leg1-long {
+  display: block;
+  width: 7px;
+  height: 60px;
+  background-color: black;
+  border-radius: 4px;
+  position: absolute;
+  top: 132px;
+  right: 180px;
+  opacity: 0.9;
+  transform: rotate3d(0, 0, 1, 40deg);
+  transition: all 300ms ease-in;
+}
+
+.leg2-short {
+  width: 8px;
+  height: 8px;
+  background-color: black;
+  border-radius: 100%;
+  position: absolute;
+  top: 136px;
+  right: 162px;
+  transform: rotate3d(0, 0, 1, -40deg);
+  opacity: 0;
+}
+
+.leg2-long {
+  display: block;
+  width: 7px;
+  height: 60px;
+  background-color: black;
+  border-radius: 4px;
+  position: absolute;
+  top: 136px;
+  right: 143px;
+  opacity: 0.9;
+  transform: rotate3d(0, 0, 1, -40deg);
+  transition: all 300ms ease-in;
+}
+
+.arm1-short {
+  width: 7px;
+  height: 8px;
+  background-color: black;
+  border-radius: 100%;
+  position: absolute;
+  top: 107px;
+  right: 162px;
+  transform: rotate3d(0, 0, 1, 80deg);
+  opacity: 0;
+}
+
+.arm1-long {
+  display: block;
+  width: 7px;
+  height: 50px;
+  background-color: black;
+  border-radius: 4px;
+  position: absolute;
+  top: 90px;
+  right: 183px;
+  opacity: 0.9;
+  transform: rotate3d(0, 0, 1, 80deg);
+  transition: all 300ms ease-in;
+}
+
+.arm2-short {
+  width: 8px;
+  height: 8px;
+  background-color: red;
+  border-radius: 100%;
+  position: absolute;
+  top: 107px;
+  right: 162px;
+  transform: rotate3d(0, 0, 1, -70deg);
+  opacity: 0;
+}
+
+.arm2-long {
+  display: block;
+  width: 8px;
+  height: 50px;
+  background-color: black;
+  border-radius: 4px;
+  position: absolute;
+  top: 94px;
+  right: 140px;
+  opacity: 0.9;
+  transform: rotate3d(0, 0, 1, -70deg);
+  transition: all 300ms ease-in;
+}

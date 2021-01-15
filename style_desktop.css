@@ -1,0 +1,150 @@
+@media only screen and (min-width: 1200px) {
+  .title_container {
+    /* border: 3px solid red; */
+    margin: 0px;
+  }
+
+  .play_title {
+    /* border: 3px solid red; */
+    text-align: center;
+    font-size: 4rem;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .play_subtitle {
+    font-family: "Commissioner", sans-serif;
+    text-align: center;
+    margin: 0px;
+  }
+
+  .ui_container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 100px;
+  }
+
+  .play_container {
+    /* border: 2px solid blue; */
+    max-width: 405px;
+    height: auto;
+    padding: 0px;
+  }
+
+  #button_container {
+    /* border: 3px solid pink; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    padding: 0px 20px;
+  }
+
+  #letter-input {
+    width: 93px;
+    height: 50px;
+    margin: 10px;
+    border: 1px solid rgb(77, 53, 21);
+    border-radius: 5px;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .play_info {
+    /* border: 2px solid red; */
+    width: auto;
+    height: auto;
+    margin: 0px;
+    /* padding: 50px 20px; */
+  }
+
+  .guess,
+  .restart {
+    display: block;
+    margin: 10px;
+    height: 50px;
+  }
+
+  .incorrect {
+    /* border: 3px solid red; */
+    font-size: 1.8rem;
+    font-weight: normal;
+    /* margin: 40px 0px 0px; */
+  }
+
+  .incorrectly_guessed_letters {
+    height: 75px;
+    font-size: 3rem;
+    padding: 0px 0px 20px 20px;
+    text-align: left;
+  }
+
+  #guesses_remaining {
+    font-size: 1.8rem;
+  }
+
+  .gallow_container {
+    /* border: 3px solid red; */
+    width: 622px;
+    height: 350px;
+    transition: all 300ms ease-in;
+  }
+
+  #gallow_img {
+    width: 622px;
+    height: auto;
+    transition: all 300ms ease-in;
+  }
+
+  .current_word {
+    margin: 10px auto;
+    width: 622px;
+    height: 50px;
+    font-size: 3rem;
+    transition: all 300ms ease-in;
+  }
+
+  .winlose {
+    /* border: 2px solid pink; */
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+    height: auto;
+  }
+
+  #win,
+  #lose {
+    /* border: 2px solid green; */
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    display: none;
+    color: antiquewhite;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  #win p,
+  #lose p {
+    padding: 0px;
+    margin: 20px 0px;
+  }
+
+  #win h2,
+  #lose h2 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+
+  #chosen-word {
+    font-size: 3rem;
+    margin: 40px 0px;
+  }
+
+  #hallowed {
+    margin: 0px 0px 40px 20px;
+    width: 350px;
+  }
+}
